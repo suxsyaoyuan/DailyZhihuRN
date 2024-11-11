@@ -17,8 +17,8 @@
     "typeRoots": ["node_modules/@types"] // 指定类型声明文件的位置
   },
   "include": [
-    "src/**/*.ts", // 包含的 TypeScript 文件
-    "src/**/*.tsx", // 包含的 TypeScript JSX 文件
+    "app/**/*.ts", // 包含的 TypeScript 文件
+    "app/**/*.tsx", // 包含的 TypeScript JSX 文件
     "node_modules/react-native/**/*.d.ts" // 包含 React Native 的声明文件
   ],
   "exclude": [

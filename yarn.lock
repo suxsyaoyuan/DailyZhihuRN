@@ -2074,14 +2074,14 @@
     use-latest-callback "^0.2.1"
     use-sync-external-store "^1.2.2"
 
-"@react-navigation/drawer@^7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@react-navigation/drawer/-/drawer-7.0.0.tgz#1797a43a00477a43cc57fde2f5c09183b356fab8"
-  integrity sha512-JbJ2ziSFVTV/qr2ffs2qMhziQJ8XHzRJhsF+PH2zFu4FCguRYaPqtf3Kl//tS4QWXVhpO4g5jweJQ7CfSousgw==
+"@react-navigation/drawer@^7.0.1":
+  version "7.0.1"
+  resolved "https://registry.npmjs.org/@react-navigation/drawer/-/drawer-7.0.1.tgz#9f1bba3e74f01c73bd80250272763211aa799638"
+  integrity sha512-9QOiB3yMIZ2/qpZdx+H7jmEn+fVK2emx1kuI6FXHoYracG/y4gAuOhVPk25OcCGFTTleEN3KDQQM39bwQQrBNw==
   dependencies:
     "@react-navigation/elements" "^2.0.0"
     color "^4.2.3"
-    react-native-drawer-layout "^4.0.0"
+    react-native-drawer-layout "^4.0.1"
     use-latest-callback "^0.2.1"
 
 "@react-navigation/elements@^2.0.0":
@@ -2119,7 +2119,7 @@
 
 "@react-navigation/native@^7.0.0":
   version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-7.0.0.tgz#d3efaca481bef01cde89c2397f4b0815682f9137"
+  resolved "https://registry.npmjs.org/@react-navigation/native/-/native-7.0.0.tgz#d3efaca481bef01cde89c2397f4b0815682f9137"
   integrity sha512-OkfVzQNAuvy6WduON+4ctLImQWybBnOEycVpEEFA3y8nheLuo4hT+ObyyYu2DVqtslltUlTNGcd2G7pbB7y/bA==
   dependencies:
     "@react-navigation/core" "^7.0.0"
@@ -2134,6 +2134,14 @@
   integrity sha512-b2ehNmgAfDziTd0EERm0C9JI9JH1kdRS4SNBWbKQOVPv23WG+5ExovwWet26sGtMabLJ5lxSE8Z2/fByfggjNQ==
   dependencies:
     nanoid "3.3.7"
+
+"@react-navigation/stack@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.npmjs.org/@react-navigation/stack/-/stack-7.0.0.tgz#007f90c8dff3aeadaf44785d0bb824f1d935b96b"
+  integrity sha512-MSPJT/drp2LQYMwUn1szGOXAZAcL2N28EuzX0g/pohVUMKIYzgKtQPr/CzYirNUzM52foVsR9fKv8vMo26ZaNQ==
+  dependencies:
+    "@react-navigation/elements" "^2.0.0"
+    color "^4.2.3"
 
 "@sideway/address@^4.1.5":
   version "4.1.5"
@@ -7449,10 +7457,10 @@ react-native-device-info@^5.0.1:
   resolved "https://registry.npm.taobao.org/react-native-device-info/download/react-native-device-info-5.0.1.tgz#e941424f9ab18688fb343dc1542b2cfaaabb330a"
   integrity sha1-6UFCT5qxhoj7ND3BVCss+qq7Mwo=
 
-react-native-drawer-layout@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/react-native-drawer-layout/-/react-native-drawer-layout-4.0.0.tgz#a54d463e64441807741a485bae896773ea7540c3"
-  integrity sha512-l9xu7YDXHImg3wpLjD12CokWV2H4Nu/Uc9EVxg/DFqEwgyDbZqE/8IGhQhN32TiZPgelAZNj5c3MBE2yTR1ivw==
+react-native-drawer-layout@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npmjs.org/react-native-drawer-layout/-/react-native-drawer-layout-4.0.1.tgz#5f2b4bae43b9be6c6b92544b63c5b4767b279933"
+  integrity sha512-395LypsQKNqcaMFHDj41jPXe3m9LbQRF7XKR1BzJh8B/kkc95OTZhwpXzMRBOLUiq4y4yL0loRzQtQRiruG+fQ==
   dependencies:
     use-latest-callback "^0.2.1"
 
@@ -7601,10 +7609,10 @@ react-native-reanimated@^3.16.1:
     convert-source-map "^2.0.0"
     invariant "^2.2.4"
 
-react-native-restart@^0.0.13:
-  version "0.0.13"
-  resolved "https://registry.npm.taobao.org/react-native-restart/download/react-native-restart-0.0.13.tgz#88003fd6b1cce9de5bafa2570ba4ef8ff1ea2937"
-  integrity sha1-iAA/1rHM6d5br6JXC6Tvj/HqKTc=
+react-native-restart@^0.0.27:
+  version "0.0.27"
+  resolved "https://registry.npmjs.org/react-native-restart/-/react-native-restart-0.0.27.tgz#43aa8210312c9dfa5ec7bd4b2f35238ad7972b19"
+  integrity sha512-8KScVICrXwcTSJ1rjWkqVTHyEKQIttm5AIMGSK1QG1+RS5owYlE4z/1DykOTdWfVl9l16FIk0w9Xzk9ZO6jxlA==
 
 react-native-root-siblings@^4.0.0:
   version "4.0.0"
@@ -7623,7 +7631,7 @@ react-native-root-toast@^3.2.0:
 
 react-native-safe-area-context@^4.14.0:
   version "4.14.0"
-  resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-4.14.0.tgz#138f4b2e180cb7517c78bd5f4d4cf91325ba0b1a"
+  resolved "https://registry.npmjs.org/react-native-safe-area-context/-/react-native-safe-area-context-4.14.0.tgz#138f4b2e180cb7517c78bd5f4d4cf91325ba0b1a"
   integrity sha512-/SyYpCulWQOnnXhRq6wepkhoyQMowHm1ptDyRz20s+YS/R9mbd+mK+jFyFCyXFJn8jp7vFl43VUCgspuOiEbwA==
 
 react-native-safe-area-view@^0.14.1:
@@ -7642,7 +7650,7 @@ react-native-safe-area-view@^0.14.1:
 
 react-native-screens@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-4.0.0.tgz#f4f4f3f37b2e71c9960ab37c14f2bb3bd6d80a7d"
+  resolved "https://registry.npmjs.org/react-native-screens/-/react-native-screens-4.0.0.tgz#f4f4f3f37b2e71c9960ab37c14f2bb3bd6d80a7d"
   integrity sha512-QGQ8+d90chOZ9JwA2K01nFzrGCTMNjsiAKJGPUXcLEiIF77/VSjLjQE9ZluMtkva0gzGI9tb/yxETkJnkw1iag==
   dependencies:
     react-freeze "^1.0.0"
