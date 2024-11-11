@@ -1,13 +1,29 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "strict": true,
-    "jsx": "react-native",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true
+    "target": "es5", // 编译目标，可以设定为 es5、es6 等
+    "lib": ["es6", "dom"], // 设置编译时引用的库文件
+    "allowJs": true, // 允许编译 JavaScript 文件
+    "skipLibCheck": true, // 跳过库文件的类型检查，加速编译
+    "esModuleInterop": true, // 启用与 CommonJS 模块的兼容性
+    "allowSyntheticDefaultImports": true, // 允许默认导入语法
+    "strict": true, // 启用严格模式（推荐启用）
+    "module": "commonjs", // 模块类型，React Native 通常使用 commonjs
+    "moduleResolution": "node", // 模块解析策略，使用 Node.js 风格
+    "resolveJsonModule": true, // 允许导入 .json 文件
+    "noEmit": true, // 不生成文件，仅进行类型检查
+    "isolatedModules": true, // 每个文件都当作独立模块处理
+    "jsx": "react-native", // JSX 语法检查
+    "types": ["react", "react-native"], // 自动包含 react 和 react-native 类型声明
+    "typeRoots": ["node_modules/@types"] // 指定类型声明文件的位置
   },
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*.ts", // 包含的 TypeScript 文件
+    "src/**/*.tsx", // 包含的 TypeScript JSX 文件
+    "node_modules/react-native/**/*.d.ts" // 包含 React Native 的声明文件
+  ],
+  "exclude": [
+    "node_modules", // 排除 node_modules 文件夹
+    "android", // 排除 android 项目目录
+    "ios" // 排除 ios 项目目录
+  ]
 }

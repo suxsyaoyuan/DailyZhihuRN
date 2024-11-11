@@ -1,13 +1,18 @@
-import {action, observable} from 'mobx';
+import {makeObservable, observable, action} from 'mobx';
 import DefaultTheme from '../theme/defaultTheme';
 import BlackTheme from '../theme/blackTheme';
+
 class ThemeStore {
+  colors = DefaultTheme;
+
   constructor() {
-    this.colors = DefaultTheme;
+    makeObservable(this, {
+      colors: observable,
+      switchTheme: action,
+    });
   }
-  @observable colors;
-  @action
-  switchTheme(type) {
+
+  switchTheme(type: 'default' | 'black') {
     if (this.colors.themeType === 'default') {
       this.colors = BlackTheme;
     } else if (this.colors.themeType === 'black') {
@@ -15,5 +20,5 @@ class ThemeStore {
     }
   }
 }
-const theme = new ThemeStore();
-export {theme};
+
+export const theme = new ThemeStore();

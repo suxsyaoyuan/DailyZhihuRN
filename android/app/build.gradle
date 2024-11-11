@@ -1,5 +1,6 @@
 apply plugin: "com.android.application"
-apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+// apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
 import com.android.build.OutputFile
 
 /**
@@ -128,6 +129,7 @@ android {
     }
 
     defaultConfig {
+        missingDimensionStrategy 'react-native-camera', 'mlkit'
         applicationId "com.zhihudaily"
         minSdkVersion rootProject.ext.minSdkVersion
         vectorDrawables.useSupportLibrary = true
@@ -189,6 +191,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-image-picker')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation 'androidx.appcompat:appcompat:1.1.0-rc01'

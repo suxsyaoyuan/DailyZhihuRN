@@ -1,6 +1,9 @@
 import {DeviceEventEmitter} from 'react-native';
+// import * as React from 'react';
+// import { NavigationContainer } from '@react-navigation/native';
 import {createAppContainer} from 'react-navigation';
 import {createDrawerNavigator} from 'react-navigation-drawer';
+// 栈路由
 import {
   createStackNavigator,
   StackViewStyleInterpolator,
@@ -33,6 +36,7 @@ import stores from '../store';
 // 二级导航
 const MainScreen = createStackNavigator(
   {
+    // initialRouteName: 'Home',
     Home: HomeScreen,
     Details: {
       screen: DetailsScreen,
@@ -74,6 +78,25 @@ const MainScreen = createStackNavigator(
     }),
   },
 );
+
+/* 底部标签导航
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
+const MyTabs = createBottomTabNavigator({
+  screens: {
+    Home: HomeScreen,
+    Profile: ProfileScreen,
+  },
+}); */
+
+/* import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+
+const MyTabs = createMaterialTopTabNavigator({
+  screens: {
+    Home: HomeScreen,
+    Profile: ProfileScreen,
+  },
+}); */
 
 /*
  * 处理抽屉的锁定模式

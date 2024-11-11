@@ -96,6 +96,7 @@ class Details extends Component {
                   shortComments: params.extra.short_comments,
                 });
               }
+              // 获取：const { id, comments } = route.params
             }}
             icon={
               <Icon type="material" name="comment" size={24} color="white" />

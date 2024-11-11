@@ -14,6 +14,8 @@ import {
 import {Axios} from './utils';
 import RNBootSplash from 'react-native-bootsplash';
 
+import Geolocation from '@react-native-community/geolocation';
+
 // import ProgressBarModal from './componetns/ProgressBarModal';  //下载进度弹层
 // import JPushModule from "jpush-react-native";  // 极光推送
 // import codePush from "react-native-code-push"; // codePush热更新
@@ -96,6 +98,7 @@ class App extends React.Component {
 
     // // 隐藏启动屏图片
     RNBootSplash.hide({duration: 250});
+    Geolocation.getCurrentPosition(info => console.log(info));
   }
 
   // componentWillUnmount() {
